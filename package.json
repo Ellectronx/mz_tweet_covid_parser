@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/Ellectronx/mz_tweet_covid_parser/issues"
   },
-  "homepage": "https://github.com/Ellectronx/mz_tweet_covid_parser#readme"
+  "homepage": "https://github.com/Ellectronx/mz_tweet_covid_parser#readme",
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  }
 }
