@@ -9,16 +9,16 @@ exports.getJSON = function (TWEET){
 
     wojewodztwa.forEach(function(element, i) {
   
-      let regex = RegExp("\\b"+element+"\\b\\s{0,}\\(\\s{0,}(\\\d{1,})\\s{0,}\\)","is");
+      let regex = RegExp("\\W{1,}"+element+"\\b\\s{0,}\\(\\s{0,}(\\d{1,})\\s{0,}\\)","is");
       let found = TWEET.match(regex);
   
       if(found !== null) {
-        //console.log(element,' -> ', found[1]);
+        console.log(element,' -> ', found[1]);
         resp[i] = parseInt(found[1]);
       }
       else {
         resp[i] = 0;
-        //console.log(element,' -> ', 0);
+        console.log(element,' -> ', 0);
       }
     });
   
